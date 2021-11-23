@@ -1,0 +1,198 @@
+.contain {
+  display: flex;
+  flex-direction: row;
+
+  @media only screen and(max-width:1180px) {
+    max-width: 766px;
+    justify-content: right;
+  }
+
+  .left {
+    margin-top: 105px;
+    margin-left: 155px;
+    z-index: 3;
+
+    @media only screen and(max-width:1180px) {
+      margin-left: -50px;
+    }
+
+    .text {
+      width: 786px;
+      height: 160px;
+
+      @media only screen and(max-width:1180px) {
+        position: relative;
+        width: 600px;
+        height: 216px;
+        margin-top: 64px;
+      }
+
+      h1 {
+        font-size: 72px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 80px;
+        background-image: linear-gradient(to right, #e1fff8 0%, #fafcf3 72%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        br {
+          display: none;
+        }
+
+        @media only screen and(max-width:1180px) {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 64px;
+          line-height: 72px;
+
+          br {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .options-row {
+      display: flex;
+      margin-top: 80px;
+      align-items: center;
+      @media only screen and(max-width:1180px) {
+        margin-top: 62px;
+      }
+      .btn {
+        position: relative;
+        width: 260px;
+        height: 56px;
+        background: #85ffb2;
+        border-radius: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 15;
+
+        span {
+          margin-left: 13px;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #101010;
+        }
+
+        &:hover {
+          background: #c0ffcd;
+        }
+      }
+      .sticky {
+        position: fixed;
+        top: 26px;
+        z-index: 5;
+        transition: 0.3s linear;
+      }
+      .nofixed {
+        position: static;
+        transition: 0.2s linear;
+        z-index: 5;
+        top: -50px;
+      }
+
+      .circle-options {
+        display: flex;
+        margin-left: 32px;
+        .circle-results {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #444;
+          width: 46px;
+          height: 46px;
+          border-radius: 100px;
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          margin-left: -15px;
+          border: solid 1px #444444;
+          background-color: #101010;
+
+          img {
+            object-fit: contain;
+          }
+
+          &:first-child {
+            margin-left: 0px;
+          }
+
+          &:hover {
+            background: #ffffff;
+            border: 1px solid #e7e7e7;
+            z-index: 10;
+          }
+        }
+      }
+
+      .border-separator {
+        margin-left: -4px;
+        width: 46px;
+        height: 0px;
+        border: 1px solid #444444;
+        transform: rotate(90deg);
+      }
+
+      .circle-data-option {
+        margin-left: -7px;
+        display: flex;
+        flex-direction: column;
+        height: 46px;
+        .circle-data-static-text {
+          height: 17px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #ffffff;
+        }
+        .circle-data-dynamic-text {
+          margin-top: 5px;
+          height: 17px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #85ffb2;
+        }
+      }
+    }
+  }
+  .right {
+    margin-top: 50px;
+    margin-left: 16px;
+
+    @media only screen and(max-width:1180px) {
+      margin-top: 27px;
+      position: absolute;
+      margin-top: -27px;
+      margin-right: 40px;
+    }
+
+    .codepen-element {
+      //position: relative;
+      width: 443px;
+      height: 396px;
+      background-blend-mode: difference;
+      mix-blend-mode: normal;
+
+      @media only screen and(max-width:1180px) {
+        width: 254px;
+        transform: scale(0.7);
+        height: 227px;
+        z-index: -2;
+      }
+    }
+  }
+}
+.active {
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+}

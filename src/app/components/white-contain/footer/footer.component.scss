@@ -1,0 +1,104 @@
+footer {
+  max-width: 1440px;
+  position: relative;
+  top: 419px;
+
+  @media only screen and(max-width:1180px) {
+    min-width: 768px;
+    top: 276px;
+    left: 20px;
+  }
+
+  .line {
+    width: 1360px;
+    height: 1px;
+    background-image: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0) 100%);
+    @media only screen and(max-width:1180px) {
+      width: 688px;
+    }
+  }
+
+  .footer-info {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    .info-logo {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media only screen and(max-width:1180px) {
+        top: -5px;
+      }
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      .info {
+        margin-left: 28px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #101010;
+
+        @media only screen and(max-width:1180px) {
+          display: none;
+        }
+      }
+    }
+
+    .links {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      @media only screen and(max-width:1180px) {
+        right: 86px;
+        bottom: 5px;
+      }
+
+      .question {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #101010;
+      }
+
+      .link {
+        margin-left: 18px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        text-decoration-line: underline;
+        cursor: pointer;
+        color: #757575;
+      }
+    }
+  }
+  .hidden-info {
+    display: none;
+    @media only screen and(max-width:1180px) {
+      display: block;
+      margin-top: 22px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      margin-left: -70px;
+    }
+  }
+}

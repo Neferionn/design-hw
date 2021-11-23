@@ -1,0 +1,41 @@
+<div class="contain">
+  <div class="left">
+    <div class="text">
+      <h1>
+        Create <br />
+        high-quality assessments, fast
+      </h1>
+    </div>
+    <div class="options-row">
+      <button
+        class="btn"
+        [ngClass]="sticky ? 'sticky' : 'nofixed'"
+        (scroll)="onscroll()"
+      >
+        <img src="../../../../assets/header/windows.png" alt="" />
+        <span>Sign in with microsoft</span>
+      </button>
+      <div class="circle-options">
+        <div
+          class="circle-results"
+          *ngFor="let circle of circleOptions; let idx = index"
+        >
+          <img [src]="circle.img" (mouseover)="getOption(circle.id)" />
+        </div>
+      </div>
+
+      <div class="border-separator"></div>
+      <div class="circle-data-option">
+        <div class="circle-data-static-text">Tests for many disciplines:</div>
+        <div class="circle-data-dynamic-text" *ngIf="selectedOption">
+          {{ selectedOption.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="codepen-element">
+      <div id="codepenelement"></div>
+    </div>
+  </div>
+</div>

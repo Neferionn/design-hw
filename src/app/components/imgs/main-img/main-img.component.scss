@@ -1,0 +1,14 @@
+div {
+  position: absolute;
+  margin-left: -646px;
+  margin-top: -474px;
+  z-index: 2;
+  img {
+    border-radius: 30px;
+    z-index: 3;
+  }
+
+  @media only screen and(max-width:1180px) {
+    margin-left: -972px;
+  }
+}

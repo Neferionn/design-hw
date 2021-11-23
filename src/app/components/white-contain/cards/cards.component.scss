@@ -1,0 +1,87 @@
+section {
+  top: 260px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 16px;
+  row-gap: 56px;
+
+  @media only screen and(max-width:1180px) {
+    top: 178px;
+    left: -18px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .card {
+    width: 443px;
+    height: 224px;
+
+    @media only screen and(max-width:1180px) {
+      width: 336px;
+      height: 200px;
+    }
+
+    img {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      margin-top: 32px;
+      margin-left: 32px;
+      object-fit: cover;
+      @media only screen and(max-width:1180px) {
+        margin: 0;
+      }
+    }
+    .title {
+      position: relative;
+      margin-top: 23px;
+      width: 350px;
+      height: 26px;
+      margin-left: 32px;
+      margin-right: 61px;
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      text-align: left;
+      color: #101010;
+
+      @media only screen and(max-width:1180px) {
+        width: 300px;
+        height: 26px;
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+    .text {
+      position: relative;
+      width: 350px;
+      height: 48px;
+      margin-top: 17px;
+      margin-left: 32px;
+      margin-right: 61px;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #444;
+
+      @media only screen and(max-width:1180px) {
+        width: 300px;
+        height: 72px;
+        margin: 0;
+        margin-top: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.contain {
+  overflow: hidden;
+  @media only screen and (max-width: 640px) {
+    display: none;
+  }
+  .black-contain {
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+
+    .header {
+      width: 1440px;
+
+      @media only screen and(max-width:1360px) {
+        min-width: 768px;
+      }
+    }
+  }
+
+  .white-contain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fcfcfb;
+
+    .sections {
+      width: 1440px;
+    }
+  }
+}
+
+.mobile {
+  display: none;
+  overflow: hidden;
+  @media (max-width: 640px) {
+    display: block;
+  }
+}

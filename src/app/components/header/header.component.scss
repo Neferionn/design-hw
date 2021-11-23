@@ -1,0 +1,31 @@
+header {
+  min-width: 1440px;
+  height: 1024px;
+  position: relative;
+
+  @media only screen and(max-width:1180px) {
+    display: flex;
+    justify-content: center;
+    min-width: 768px;
+  }
+
+  .elipse88 {
+    top: 420px;
+    position: absolute;
+    left: -84px;
+    width: 478px;
+    height: 478px;
+    background: rgba(222, 97, 27, 0.3);
+    filter: blur(171px);
+  }
+
+  .elipse89 {
+    top: 666px;
+    position: absolute;
+    right: 34px;
+    width: 478px;
+    height: 478px;
+    background: rgba(27, 117, 222, 0.3);
+    filter: blur(171px);
+  }
+}

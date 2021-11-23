@@ -1,0 +1,13 @@
+.quiz {
+  position: absolute;
+  width: 328px;
+  height: 329px;
+  left: -16px;
+  top: -56px;
+  border-radius: 15px;
+  z-index: 2;
+
+  @media only screen and(max-width:1180px) {
+    display: none;
+  }
+}

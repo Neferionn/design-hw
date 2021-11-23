@@ -1,0 +1,61 @@
+.container {
+  top: 364px;
+  width: 672px;
+  left: 384px;
+  position: absolute;
+
+  @media only screen and(max-width:1180px) {
+    top: 130px;
+    left: 360px;
+    width: 688px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+    .img {
+      align-self: center;
+      width: 176.83px;
+      height: 56.3px;
+      margin-left: -10px;
+      background-image: url("../../../../assets/info-section/Vector.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .title {
+      margin-top: 76.2px;
+      @media only screen and(max-width:1180px) {
+        align-self: flex-start;
+      }
+      h3 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        /* identical to box height, or 117% */
+
+        text-align: center;
+        @media only screen and(max-width:1180px) {
+        }
+      }
+    }
+    .description {
+      margin-top: 24px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+
+      text-align: center;
+      color: #444444;
+      @media only screen and(max-width:1180px) {
+        align-self: flex-start;
+        text-align: left;
+      }
+    }
+  }
+}

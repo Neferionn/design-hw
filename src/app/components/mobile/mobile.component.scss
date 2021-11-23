@@ -1,0 +1,55 @@
+section {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000000;
+
+  .codepen {
+    background: transparent;
+    margin-top: 128px;
+    width: 413px;
+    height: 359px;
+  }
+  .logo {
+    margin-top: -70px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url("../../../assets/header/smile/smile-face.svg");
+  }
+
+  .title {
+    position: absolute;
+    margin-top: 184px;
+    width: 343px;
+    height: 112px;
+    h1 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
+      color: #85ffb2;
+    }
+  }
+
+  .text {
+    margin-top: 32px;
+    width: 343px;
+    height: 54px;
+    left: 16px;
+    top: 560px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #c5c5c5;
+  }
+}

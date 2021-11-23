@@ -1,0 +1,33 @@
+section {
+  position: relative;
+  height: 1480px;
+  width: 1440px;
+  background: #fcfcfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media only screen and(max-width:1360px) {
+    height: 1380px;
+  }
+
+  .elipse87 {
+    position: absolute;
+    width: 716px;
+    height: 716px;
+    left: 928px;
+    top: 483px;
+    background: rgba(201, 255, 133, 0.15);
+    filter: blur(171px);
+  }
+
+  .elipse88 {
+    position: absolute;
+    width: 716px;
+    height: 716px;
+    left: 670px;
+    top: 876px;
+    background: rgba(157, 255, 214, 0.2);
+    filter: blur(171px);
+  }
+}

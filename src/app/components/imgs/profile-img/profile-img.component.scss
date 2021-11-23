@@ -1,0 +1,213 @@
+.profile-card {
+  position: absolute;
+  width: 327px;
+  height: 133px;
+  top: -215px;
+  left: 40px;
+  background: #ffffff;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  /* Drop Shadow */
+  box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.07);
+  z-index: 2;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  flex-direction: column;
+
+  @media only screen and(max-width:1180px) {
+    width: 248px;
+    height: 100px;
+    left: 836px;
+  }
+
+  .top-side {
+    border-bottom: 1px solid #e7e7e7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
+    flex-direction: column;
+    padding: 0px 17px;
+
+    @media only screen and(max-width:1180px) {
+      height: 50px;
+    }
+
+    .text {
+      display: flex;
+      justify-content: left;
+      width: 100%;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 8px;
+      line-height: 10px;
+      letter-spacing: -0.4px;
+
+      @media only screen and(max-width:1180px) {
+        margin-left: 8px;
+      }
+    }
+
+    .bar {
+      display: flex;
+      flex-direction: row;
+      margin-top: 7px;
+
+      .half-bar {
+        width: 233px;
+        border-bottom: 2px solid #85ffb2;
+
+        @media only screen and(max-width:1180px) {
+          width: 176px;
+          border: 1px solid #85ffb2;
+        }
+      }
+      .full-bar {
+        width: 62px;
+        border-bottom: 2px solid rgba(100, 100, 100, 0.1);
+
+        @media only screen and(max-width:1180px) {
+          width: 32px;
+          border: 1px solid rgba(100, 100, 100, 0.1);
+        }
+      }
+    }
+  }
+
+  .bottom-side {
+    height: 66px;
+    display: flex;
+    justify-content: left;
+    margin-left: 15px;
+    align-items: center;
+
+    @media only screen and(max-width:1180px) {
+      height: 50px;
+      margin-left: 11px;
+    }
+    img {
+      margin-top: -3px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      @media only screen and(max-width:1180px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .text {
+      float: left;
+      margin-left: 15px;
+      margin-top: -2px;
+
+      @media only screen and(max-width:1180px) {
+        margin-left: 11px;
+      }
+
+      .name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 110%;
+
+        @media only screen and(max-width:1180px) {
+          font-size: 11px;
+          line-height: 110%;
+          white-space: pre;
+        }
+      }
+
+      .job {
+        margin-top: 5px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media only screen and(max-width:1180px) {
+          font-size: 7px;
+          line-height: 9px;
+        }
+      }
+    }
+    .progress {
+      margin-top: -7px;
+      margin-left: 82px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media only screen and(max-width:1180px) {
+        margin-left: 52px;
+      }
+      .numbers {
+        display: flex;
+        flex-direction: row;
+        .number {
+          width: 40px;
+          height: 30px;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 36px;
+          text-align: center;
+          letter-spacing: -1.92px;
+          text-transform: uppercase;
+
+          @media only screen and(max-width:1180px) {
+            width: 30px;
+            height: 23px;
+            font-size: 23px;
+            line-height: 27px;
+            letter-spacing: -1.4px;
+          }
+        }
+        .slash {
+          margin-left: 3px;
+          width: 13px;
+          height: 5px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 6px;
+          line-height: 5px;
+          letter-spacing: -0.07px;
+          color: #101010;
+
+          @media only screen and(max-width:1180px) {
+            font-size: 5px;
+            line-height: 3px;
+            letter-spacing: -0.0578918px;
+          }
+        }
+      }
+
+      .minutes {
+        align-self: center;
+        margin-left: -15px;
+        margin-top: 5px;
+        width: 23px;
+        height: 5px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 6px;
+        line-height: 5px;
+        text-align: center;
+        letter-spacing: -0.0768px;
+        color: #101010;
+
+        @media only screen and(max-width:1180px) {
+          width: 17.34px;
+          height: 3.77px;
+          font-size: 4.5px;
+          line-height: 3px;
+          letter-spacing: -0.0578918px;
+        }
+      }
+    }
+  }
+}
